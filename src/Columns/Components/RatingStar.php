@@ -24,8 +24,6 @@ class RatingStar extends Column implements Editable
     {
         parent::setUp();
 
-        $this->disabledClick();
-
         $this->rules(['boolean']);
     }
 

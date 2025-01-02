@@ -9,7 +9,11 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentRatingStarServiceProvider extends PackageServiceProvider
 {
-    public function configurePackage(Package $package): void
+    protected array $styles = [
+        'filament-rating' => __DIR__ . '/../resources/dist/style.css',
+    ];
+
+    public function configurePackage(Package $package) : void
     {
         /*
          * This class is a Package Service Provider
@@ -20,15 +24,5 @@ class FilamentRatingStarServiceProvider extends PackageServiceProvider
             ->name('filament-rating-star')
             ->hasConfigFile()
             ->hasViews();
-    }
-
-    public function packageBooted(): void
-    {
-        FilamentAsset::register(
-            [
-                Css::make('filament-rating-star-styles', __DIR__.'/../resources/dist/style.css'),
-            ],
-            'ibrahimbougaoua/filament-rating-star'
-        );
     }
 }
