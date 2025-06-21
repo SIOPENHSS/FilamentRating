@@ -47,7 +47,7 @@
                 $colorClass => $state >= ($value - 0.5),
             ])
         >
-            <x-icon name="heroicon-s-star" class="absolute start-0 {{ $sizeClass }}" />
+            <x-icon name="lucide-star" class="absolute start-0 {{ $sizeClass }}" />
         </div>
 
         <div
@@ -57,7 +57,7 @@
                 $colorClass => $state >= $value,
             ])
         >
-            <x-icon name="heroicon-s-star" class="absolute end-0 {{ $sizeClass }}" />
+            <x-icon name="lucide-star" class="absolute end-0 {{ $sizeClass }}" />
         </div>
     @endforeach
 </div>

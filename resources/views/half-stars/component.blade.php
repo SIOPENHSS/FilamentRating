@@ -68,7 +68,7 @@
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-s-star" class="absolute start-0 {{ $sizeClass }} pointer-events-none" />
+                <x-icon name="lucide-star" class="absolute start-0 {{ $sizeClass }} pointer-events-none" />
             </label>
 
             <input
@@ -88,7 +88,7 @@
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-s-star" class="absolute end-0 {{ $sizeClass }} pointer-events-none" />
+                <x-icon name="lucide-star" class="absolute end-0 {{ $sizeClass }} pointer-events-none" />
             </label>
 
             <input

@@ -61,7 +61,7 @@
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-s-star" class="{{ $sizeClass }} pointer-events-none" />
+                <x-icon name="lucide-star" class="{{ $sizeClass }} pointer-events-none" />
             </label>
 
             <input
