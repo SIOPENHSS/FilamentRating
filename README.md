@@ -1,28 +1,31 @@
-# Add rating fields and columns to Filament forms and tables
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mokhosh/filament-rating.svg?style=flat-square)](https://packagist.org/packages/mokhosh/filament-rating)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mokhosh/filament-rating/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mokhosh/filament-rating/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mokhosh/filament-rating/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mokhosh/filament-rating/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/mokhosh/filament-rating.svg?style=flat-square)](https://packagist.org/packages/mokhosh/filament-rating)
+# Filament Rating
 
 Add beautiful and customizable rating fields and columns to Filament forms and tables.
 
-| Form Component | Table Column | Infolist Entry |
-|----------------|--------------|----------------|
-|![Rating form component](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-form.png)|![Rating table column](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-table.png)|![Rating infolist entry](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-infolist.png)|
+| Form Component                                                                                                                   | Table Column                                                                                                                    | Infolist Entry                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| ![Rating form component](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-form.png) | ![Rating table column](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-table.png) | ![Rating infolist entry](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-infolist.png) |
+
+## 📦 About This Fork
+
+This package is a fork of [mokhosh/filament-rating](https://github.com/mokhosh/filament-rating),  
+customized to fit the specific needs of an internal project.
+
+Modifications include:
+
+- ✅ Feature adjustments and enhancements
+- ✅ Logic changes based on project requirements
+- ✅ Compatibility improvements (if applicable)
+
+All original copyrights remain with the original author  
+under the terms of the MIT license.
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require mokhosh/filament-rating
-```
-
-Publish the assets so the styles are correct:
-
-```bash
-php artisan filament-rating:install
+composer require siopen/filament-rating
 ```
 
 ## Usage
@@ -95,7 +98,7 @@ $form->schema([
 
 ## Customizing The Size
 
-You can customize the size of the stars. 
+You can customize the size of the stars.
 The default value is `md`.
 The accepted values are: `xs`, `sm`, `md`, `lg` and `xl`, like this:
 

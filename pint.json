@@ -1,14 +1,45 @@
 {
-    "preset": "laravel",
-    "rules": {
-        "blank_line_before_statement": true,
-        "concat_space": {
-            "spacing": "one"
-        },
-        "method_argument_space": true,
-        "single_trait_insert_per_statement": true,
-        "types_spaces": {
-            "space": "single"
-        }
-    }
+	"preset": "laravel",
+	"rules": {
+		"blank_line_before_statement": {
+			"statements": [
+				"return",
+				"throw",
+				"continue",
+				"break"
+			]
+		},
+		"concat_space": {
+			"spacing": "one"
+		},
+		"method_argument_space": {
+			"on_multiline": "ensure_fully_multiline"
+		},
+		"single_trait_insert_per_statement": true,
+		"types_spaces": {
+			"space": "single"
+		},
+		"array_syntax": {
+			"syntax": "short"
+		},
+		"binary_operator_spaces": {
+			"default": "align_single_space_minimal"
+		},
+		"cast_spaces": {
+			"space": "single"
+		},
+		"class_definition": {
+			"single_line": false
+		},
+		"no_trailing_whitespace": true,
+		"no_unused_imports": true,
+		"phpdoc_align": {
+			"align": "vertical"
+		},
+		"phpdoc_separation": true,
+		"phpdoc_summary": false,
+		"single_blank_line_before_namespace": true,
+		"space_after_semicolon": true,
+		"whitespace_after_comma_in_array": true
+	}
 }
